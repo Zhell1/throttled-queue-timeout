@@ -1,6 +1,6 @@
 {
   "name": "throttled-queue-timeout",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Throttles arbitrary code to execute a maximum number of times per interval with a timeout. Best for making throttled API requests.",
   "main": "dist/throttledQueue.js",
   "types": "dist/throttledQueue.d.ts",
