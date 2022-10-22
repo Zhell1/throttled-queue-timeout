@@ -46,8 +46,8 @@ function throttledQueue(maxRequestsPerInterval, interval, evenlySpaced, timeToLi
         }
         lastIntervalStart = now;
         numRequestsPerInterval = 0;
-        for (var _i = 0, _a = queue.splice(0, maxRequestsPerInterval); _i < _a.length; _i++) {
-            var callback = _a[_i];
+        for (var i = 0; i < maxRequestsPerInterval; i++) {
+            var callback = queue.next();
             numRequestsPerInterval++;
             void callback();
         }
